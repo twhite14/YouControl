@@ -211,6 +211,50 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define ENDPOINT4_CONFIG	ENDPOINT_TRANSIMIT_ONLY
   #define ENDPOINT5_CONFIG	ENDPOINT_TRANSIMIT_ONLY
   #define ENDPOINT6_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  
+//YouControl Additions
+//Copy of Keyboard/Mouse/Joystick
+#elif defined(USB_YOUCONTROL)
+  #define VENDOR_ID		        0x16C0
+  #define PRODUCT_ID		    0x0482
+  #define MANUFACTURER_NAME	    {'T','e','e','n','s','y','d','u','i','n','o'}
+  #define MANUFACTURER_NAME_LEN	11
+  #define PRODUCT_NAME		    {'T','h','i','s',' ','i','s',' ','a',' ','t','e','s','t',' ','J','o','y','s','t','i','c','k'}
+  #define PRODUCT_NAME_LEN	    23
+  #define EP0_SIZE		        64
+  #define NUM_ENDPOINTS         6
+  #define NUM_USB_BUFFERS	    24
+  #define NUM_INTERFACE		    5
+  #define SEREMU_INTERFACE      2	// Serial emulation
+  #define SEREMU_TX_ENDPOINT    1
+  #define SEREMU_TX_SIZE        64
+  #define SEREMU_TX_INTERVAL    1
+  #define SEREMU_RX_ENDPOINT    2
+  #define SEREMU_RX_SIZE        32
+  #define SEREMU_RX_INTERVAL    2
+  #define KEYBOARD_INTERFACE    0	// Keyboard
+  #define KEYBOARD_ENDPOINT     3
+  #define KEYBOARD_SIZE         8
+  #define KEYBOARD_INTERVAL     1
+  #define KEYMEDIA_INTERFACE    4	// Keyboard Media Keys
+  #define KEYMEDIA_ENDPOINT     6
+  #define KEYMEDIA_SIZE         8
+  #define KEYMEDIA_INTERVAL     4
+  #define MOUSE_INTERFACE       1	// Mouse
+  #define MOUSE_ENDPOINT        5
+  #define MOUSE_SIZE            8
+  #define MOUSE_INTERVAL        1
+  #define JOYSTICK_INTERFACE    3	// Joystick
+  #define JOYSTICK_ENDPOINT     4
+  #define JOYSTICK_SIZE         16
+  #define JOYSTICK_INTERVAL     2
+  #define ENDPOINT1_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  #define ENDPOINT2_CONFIG	ENDPOINT_RECEIVE_ONLY
+  #define ENDPOINT3_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  #define ENDPOINT4_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  #define ENDPOINT5_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  #define ENDPOINT6_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+//End YouControl Additions
 
 #elif defined(USB_SERIAL_HID)
   #define VENDOR_ID		0x16C0
