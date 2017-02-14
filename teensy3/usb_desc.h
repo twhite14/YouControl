@@ -222,9 +222,9 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define PRODUCT_NAME		    {'Y','o','u','C','o','n','t','r','o','l',' ','J','o','y','s','t','i','c','k','s'}
   #define PRODUCT_NAME_LEN	    20
   #define EP0_SIZE		        64
-  #define NUM_ENDPOINTS         3
+  #define NUM_ENDPOINTS         6
   #define NUM_USB_BUFFERS	    24
-  #define NUM_INTERFACE		    2
+  #define NUM_INTERFACE		    5
   #define SEREMU_INTERFACE      2	// Serial emulation
   #define SEREMU_TX_ENDPOINT    1
   #define SEREMU_TX_SIZE        64
@@ -236,25 +236,25 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define JOYSTICK1_ENDPOINT     4
   #define JOYSTICK1_SIZE         16
   #define JOYSTICK1_INTERVAL     2
-  //#define JOYSTICK2_INTERFACE    2	// Joystick
-  //#define JOYSTICK2_ENDPOINT     4
-  //#define JOYSTICK2_SIZE         16
-  //#define JOYSTICK2_INTERVAL     2
-  //#define JOYSTICK3_INTERFACE    3	// Joystick
-  //#define JOYSTICK3_ENDPOINT     5
-  //#define JOYSTICK3_SIZE         16
-  //#define JOYSTICK3_INTERVAL     2
-  //#define JOYSTICK4_INTERFACE    4	// Joystick
-  //#define JOYSTICK4_ENDPOINT     6
-  //#define JOYSTICK4_SIZE         16
-  //#define JOYSTICK4_INTERVAL     2
+  #define JOYSTICK2_INTERFACE    4	// Joystick
+  #define JOYSTICK2_ENDPOINT     5
+  #define JOYSTICK2_SIZE         16
+  #define JOYSTICK2_INTERVAL     2
+  #define JOYSTICK3_INTERFACE    5	// Joystick
+  #define JOYSTICK3_ENDPOINT     6
+  #define JOYSTICK3_SIZE         16
+  #define JOYSTICK3_INTERVAL     2
+  #define JOYSTICK4_INTERFACE    6	// Joystick
+  #define JOYSTICK4_ENDPOINT     7
+  #define JOYSTICK4_SIZE         16
+  #define JOYSTICK4_INTERVAL     2
   #define ENDPOINT1_CONFIG	ENDPOINT_TRANSIMIT_ONLY
   #define ENDPOINT2_CONFIG	ENDPOINT_RECEIVE_ONLY
-  //#define ENDPOINT1_CONFIG	ENDPOINT_TRANSIMIT_ONLY
-  //#define ENDPOINT2_CONFIG	ENDPOINT_TRANSIMIT_ONLY
   //#define ENDPOINT3_CONFIG	ENDPOINT_TRANSIMIT_ONLY
   #define ENDPOINT4_CONFIG	ENDPOINT_TRANSIMIT_ONLY
-  //#define ENDPOINT5_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  #define ENDPOINT5_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  #define ENDPOINT6_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  #define ENDPOINT7_CONFIG	ENDPOINT_TRANSIMIT_ONLY
 //End YouControl Additions
 
 #elif defined(USB_SERIAL_HID)
