@@ -215,16 +215,16 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
 //YouControl Additions
 //Copy of Keyboard/Mouse/Joystick
 #elif defined(USB_YOUCONTROL)
-  #define VENDOR_ID		        0x16C0
-  #define PRODUCT_ID		    0x0482
-  #define MANUFACTURER_NAME	    {'T','e','e','n','s','y','d','u','i','n','o'}
-  #define MANUFACTURER_NAME_LEN	11
-  #define PRODUCT_NAME		    {'T','h','i','s',' ','i','s',' ','a',' ','t','e','s','t',' ','J','o','y','s','t','i','c','k'}
-  #define PRODUCT_NAME_LEN	    23
+  #define VENDOR_ID		        0x4036
+  #define PRODUCT_ID		    0xA794
+  #define MANUFACTURER_NAME	    {'Y','o','u','C','o','n','t','r','o','l'}
+  #define MANUFACTURER_NAME_LEN	10
+  #define PRODUCT_NAME		    {'Y','o','u','C','o','n','t','r','o','l',' ','J','o','y','s','t','i','c','k','s'}
+  #define PRODUCT_NAME_LEN	    20
   #define EP0_SIZE		        64
-  #define NUM_ENDPOINTS         6
+  #define NUM_ENDPOINTS         3
   #define NUM_USB_BUFFERS	    24
-  #define NUM_INTERFACE		    5
+  #define NUM_INTERFACE		    2
   #define SEREMU_INTERFACE      2	// Serial emulation
   #define SEREMU_TX_ENDPOINT    1
   #define SEREMU_TX_SIZE        64
@@ -232,28 +232,29 @@ let me know?  http://forum.pjrc.com/forums/4-Suggestions-amp-Bug-Reports
   #define SEREMU_RX_ENDPOINT    2
   #define SEREMU_RX_SIZE        32
   #define SEREMU_RX_INTERVAL    2
-  #define KEYBOARD_INTERFACE    0	// Keyboard
-  #define KEYBOARD_ENDPOINT     3
-  #define KEYBOARD_SIZE         8
-  #define KEYBOARD_INTERVAL     1
-  #define KEYMEDIA_INTERFACE    4	// Keyboard Media Keys
-  #define KEYMEDIA_ENDPOINT     6
-  #define KEYMEDIA_SIZE         8
-  #define KEYMEDIA_INTERVAL     4
-  #define MOUSE_INTERFACE       1	// Mouse
-  #define MOUSE_ENDPOINT        5
-  #define MOUSE_SIZE            8
-  #define MOUSE_INTERVAL        1
-  #define JOYSTICK_INTERFACE    3	// Joystick
-  #define JOYSTICK_ENDPOINT     4
-  #define JOYSTICK_SIZE         16
-  #define JOYSTICK_INTERVAL     2
+  #define JOYSTICK1_INTERFACE    3	// Joystick
+  #define JOYSTICK1_ENDPOINT     4
+  #define JOYSTICK1_SIZE         16
+  #define JOYSTICK1_INTERVAL     2
+  //#define JOYSTICK2_INTERFACE    2	// Joystick
+  //#define JOYSTICK2_ENDPOINT     4
+  //#define JOYSTICK2_SIZE         16
+  //#define JOYSTICK2_INTERVAL     2
+  //#define JOYSTICK3_INTERFACE    3	// Joystick
+  //#define JOYSTICK3_ENDPOINT     5
+  //#define JOYSTICK3_SIZE         16
+  //#define JOYSTICK3_INTERVAL     2
+  //#define JOYSTICK4_INTERFACE    4	// Joystick
+  //#define JOYSTICK4_ENDPOINT     6
+  //#define JOYSTICK4_SIZE         16
+  //#define JOYSTICK4_INTERVAL     2
   #define ENDPOINT1_CONFIG	ENDPOINT_TRANSIMIT_ONLY
   #define ENDPOINT2_CONFIG	ENDPOINT_RECEIVE_ONLY
-  #define ENDPOINT3_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  //#define ENDPOINT1_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  //#define ENDPOINT2_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  //#define ENDPOINT3_CONFIG	ENDPOINT_TRANSIMIT_ONLY
   #define ENDPOINT4_CONFIG	ENDPOINT_TRANSIMIT_ONLY
-  #define ENDPOINT5_CONFIG	ENDPOINT_TRANSIMIT_ONLY
-  #define ENDPOINT6_CONFIG	ENDPOINT_TRANSIMIT_ONLY
+  //#define ENDPOINT5_CONFIG	ENDPOINT_TRANSIMIT_ONLY
 //End YouControl Additions
 
 #elif defined(USB_SERIAL_HID)
