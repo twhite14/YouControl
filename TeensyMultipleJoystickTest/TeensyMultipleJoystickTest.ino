@@ -13,18 +13,24 @@
 void setup() {
   pinMode(0, INPUT_PULLUP);
   pinMode(1, INPUT_PULLUP);
+  pinMode(13, OUTPUT);
 }
 
 void loop() {
-  // read analog inputs and set X-Y position
-  Joystick.X(analogRead(0));
-  Joystick.Y(analogRead(1));
-
-  // read the digital inputs and set the buttons
-  Joystick.button(1, digitalRead(0));
-  Joystick.button(2, digitalRead(1));
-
-  // a brief delay, so this runs 20 times per second
-  delay(50);
+  // Simulate button presses with a half second delay between changes.
+  Joystick1.button(1, 0);
+  Joystick2.button(2, 0);
+  Joystick3.button(3, 0);
+  Joystick4.button(4, 0);
+  digitalWrite(13, LOW);
+  delay(500);
+  
+  Joystick1.button(1, 1);
+  Joystick2.button(2, 1);
+  Joystick3.button(3, 1);
+  Joystick4.button(4, 1);
+  digitalWrite(13, HIGH);
+  delay(500);
 }
+
 
