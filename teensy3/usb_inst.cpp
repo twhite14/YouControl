@@ -68,6 +68,28 @@ usb_joystick_class Joystick;
 uint8_t usb_joystick_class::manual_mode = 0;
 #endif
 
+//YouControl Additions
+#ifdef JOYSTICK1_INTERFACE
+usb_joystick1_class Joystick1;
+uint8_t usb_joystick1_class::manual_mode = 0;
+#endif
+
+#ifdef JOYSTICK2_INTERFACE
+usb_joystick2_class Joystick2;
+uint8_t usb_joystick2_class::manual_mode = 0;
+#endif
+
+#ifdef JOYSTICK3_INTERFACE
+usb_joystick3_class Joystick3;
+uint8_t usb_joystick3_class::manual_mode = 0;
+#endif
+
+#ifdef JOYSTICK4_INTERFACE
+usb_joystick4_class Joystick4;
+uint8_t usb_joystick4_class::manual_mode = 0;
+#endif
+//End YouControl Additions
+
 #ifdef USB_DISABLED
 usb_serial_class Serial;
 #endif
