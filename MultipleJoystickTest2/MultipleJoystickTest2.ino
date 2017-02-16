@@ -125,17 +125,17 @@ void setup() {
 
 void loop(){
   // Simulate button presses with a half second delay between changes.
-  Joystick[1].pressButton(1);
-  Joystick[2].pressButton(2);
-  Joystick[3].pressButton(3);
-  Joystick[4].pressButton(4);
+  Joystick[0].pressButton(1);
+  Joystick[1].pressButton(2);
+  Joystick[2].pressButton(3);
+  Joystick[3].pressButton(4);
   digitalWrite(13, LOW);
   delay(500);
   
-  Joystick[1].releaseButton(1);
-  Joystick[2].releaseButton(2);
-  Joystick[3].releaseButton(3);
-  Joystick[4].releaseButton(4);
+  Joystick[0].releaseButton(1);
+  Joystick[1].releaseButton(2);
+  Joystick[2].releaseButton(3);
+  Joystick[3].releaseButton(4);
   digitalWrite(13, HIGH);
   delay(500);
 }
