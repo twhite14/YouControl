@@ -1,4 +1,4 @@
-update=3/4/2017 5:41:16 PM
+update=3/4/2017 10:34:40 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -20,9 +20,6 @@ SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
-[cvpcb]
-version=1
-NetIExt=net
 [general]
 version=1
 [eeschema]
@@ -61,3 +58,6 @@ LibName29=valves
 LibName30=myelin-kicad-libraries/nRF24L01+
 LibName31=YouControl
 LibName32=myelin-kicad-libraries/nrf24l01p_smd
+[cvpcb]
+version=1
+NetIExt=net
