@@ -1,4 +1,4 @@
-update=3/23/2017 4:52:17 PM
+update=3/30/2017 3:25:55 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,6 +59,8 @@ LibName32=myelin-kicad-libraries/nrf24l01p_smd
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -69,5 +71,3 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
-[general]
-version=1
